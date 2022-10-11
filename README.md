@@ -31,12 +31,14 @@ Sabendo da importância da previsão da demanda energética, **o objetivo deste 
 ## Arquivos do trabalho
 
 * A **base de dados** para este trabalho está na pasta ``BDD`` que contém os arquivos:
-  * ``series.txt`` que corresponde a série temporal que representa as medições de **consumo de energia elétrica na Austrália** ao longo de várias décadas
-  * ``series_norm.txt`` que corresponde aos **valores normalizados** do arquivo ``series.txt``, já que os valores normalizados melhoram o desempenho das técnicas de inteligência computacional (esta foi a série utilizada ao longo do trabalho)
-
+  * ``series.txt``: corresponde a série temporal que representa as medições de **consumo de energia elétrica na Austrália** ao longo de várias décadas
+  * ``series_norm.txt``: corresponde aos **valores normalizados** do arquivo ``series.txt``, já que os valores normalizados melhoram o desempenho das técnicas de inteligência computacional (esta foi a série utilizada ao longo do trabalho)
+  * ``predicted_ARIMA_eletric.csv``: é o resultado da **previsão do ARIMA** da série do consumo de energia
+  * ``residuals_ARIMA_eletric.csv``: são os **resíduos** da previsão do ARIMA, que serão utilizados no notebook Jupyter ``Tecnica_Proposta.ipynb``
+  
 * O arquivo ``auto_arima.R`` contém o algoritmo da técnica ARIMA para realizar a **previsão** da série ``series_norm.txt``
 
-* O arquivo ``Tecnica_Proposta.ipynb`` é um notebook que contém uma explicação do processo executado na **técnica proposta** para realizar a previsão da série que representa o consumo de energia na Austrália. 
+* O arquivo ``Tecnica_Proposta.ipynb`` é um notebook Jupyter que contém uma explicação e execução de todo o processo da **técnica proposta** para realizar a previsão da série que representa o consumo de energia na Austrália.
 
   
 
